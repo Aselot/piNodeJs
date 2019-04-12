@@ -5,7 +5,7 @@ var mysql = require('mysql')
 
 
 app.get('/', function (req, res) {
-    fs.readFile('../../login.html', function (err, data) {
+    fs.readFile('../ressources/view/login.html', function (err, data) {
         res.write(data);
     });
 });
